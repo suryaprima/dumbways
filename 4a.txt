@@ -1,0 +1,11 @@
+// tampilkan semua data tabel Product
+SELECT * FROM `product`
+
+// tampilkan 1 data product dengan distributor tertentu
+SELECT * FROM `product` WHERE id_distributor = 1
+
+// Edit 1 data distributor
+UPDATE distributor SET name="Distributor 10", address="Jl. Distributor 10" WHERE id= 1
+
+// Tambahkan Data Product
+INSERT INTO product(id, name, photos, `desc`, nutrisi, serving_size, id_distributor) VALUES ("","Product 10","photos/product/10","description product 10","nutrisi product 10",10,3)
